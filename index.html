@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed El_Sayed Salah – Network & System Administrator | Cloud Administrator. Skilled in Azure, Windows Server, Networking & IoT. Based in Nasr City, Egypt.">
+    <title>Ahmed El_Sayed Salah | Network & Cloud Administrator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Ahmed<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="Ahmed_Elsayed_Salah_CV.pdf" download="Ahmed_Elsayed_Salah_CV.pdf" class="nav-cv-btn" id="download-cv-btn">
+                <i class="fas fa-download"></i>
+                <span>Download CV</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to Opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name"> Ahmed El_Sayed </span>
+            </h1>
+            <div class="hero-roles">
+                <span class="role-prefix">I'm a&nbsp;</span>
+                <div class="role-wrapper">
+                    <span class="role-text" id="typed-role"></span>
+                    <span class="cursor">|</span>
+                </div>
+            </div>
+            <p class="hero-description">
+                Highly motivated IT professional with expertise in enterprise networking,
+                Windows Server administration, Microsoft Azure cloud services, and IoT
+                technologies. NTI graduate with 288 hours of advanced infrastructure training.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Get in Touch
+                </a>
+                <a href="#projects" class="btn btn-outline">
+                    <i class="fas fa-diagram-project"></i>
+                    View Projects
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="288">0</span>
+                    <span class="stat-label">Training Hours</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Azure Tracks</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Major Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="11">0</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="orbit-ring ring-1">
+                <div class="orbit-icon"><i class="fas fa-network-wired"></i></div>
+            </div>
+            <div class="orbit-ring ring-2">
+                <div class="orbit-icon"><i class="fab fa-microsoft"></i></div>
+            </div>
+            <div class="orbit-ring ring-3">
+                <div class="orbit-icon"><i class="fas fa-microchip"></i></div>
+            </div>
+            <div class="orbit-center">
+                <div class="center-glow"></div>
+                <i class="fas fa-terminal"></i>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user"></i> Introduction</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image-frame">
+                        <img src="profile.jpg" alt="Ahmed El_Sayed Salah" class="about-image">
+                        <div class="frame-decoration frame-top-left"></div>
+                        <div class="frame-decoration frame-bottom-right"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3 class="about-subtitle">Network & Cloud Administrator</h3>
+                    <p class="about-text">
+                        Highly motivated Computers and Information graduate with strong technical
+                        expertise in networking, Windows Server administration, Microsoft Azure cloud
+                        services, and IoT technologies. Hands-on experience configuring enterprise lab
+                        environments including Active Directory, DNS, DHCP, Hyper-V, WAC, LAPS, and
+                        Azure IaaS workloads.
+                    </p>
+                    <p class="about-text">
+                        Completed a 288-hour advanced technical program at NTI covering Windows Server
+                        2016/2025, Azure Administrator (AZ-104), Azure Networking (AZ-700), and Azure
+                        Security (AZ-500). Skilled in troubleshooting network issues, managing hybrid cloud
+                        infrastructure, and developing IoT-based smart solutions using ESP32 and Arduino.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Nasr City, Egypt</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <span class="info-label">Languages</span>
+                                <span class="info-value">Arabic (Native), English (Excellent)</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">Degree</span>
+                                <span class="info-value">B.Sc. Computers & Information</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-bullseye"></i>
+                            <div>
+                                <span class="info-label">Seeking</span>
+                                <span class="info-value">SysAdmin / Cloud / Network Eng.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-code"></i> Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-categories">
+                <!-- Networking -->
+                <div class="skill-category glass-card" data-aos="fade-up">
+                    <div class="category-icon" style="--accent: #00d4ff;">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="category-title">Networking</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TCP/IP Configuration</span>
+                        <span class="skill-tag">OSPF</span>
+                        <span class="skill-tag">EIGRP</span>
+                        <span class="skill-tag">RIP</span>
+                        <span class="skill-tag">Switching</span>
+                        <span class="skill-tag">VLANs</span>
+                        <span class="skill-tag">VPNs</span>
+                        <span class="skill-tag">ACLs</span>
+                        <span class="skill-tag">Port Security</span>
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">Troubleshooting</span>
+                    </div>
+                    <div class="category-bar">
+                        <div class="bar-fill" data-width="90" style="--accent: #00d4ff;"></div>
+                    </div>
+                </div>
+                <!-- Windows Server -->
+                <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-icon" style="--accent: #7c3aed;">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="category-title">Windows Server</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AD DS</span>
+                        <span class="skill-tag">DNS</span>
+                        <span class="skill-tag">DHCP</span>
+                        <span class="skill-tag">GPO</span>
+                        <span class="skill-tag">Hyper-V</span>
+                        <span class="skill-tag">Failover Clustering</span>
+                        <span class="skill-tag">NLB</span>
+                        <span class="skill-tag">Storage Spaces</span>
+                        <span class="skill-tag">Data Deduplication</span>
+                        <span class="skill-tag">WAC</span>
+                        <span class="skill-tag">LAPS</span>
+                    </div>
+                    <div class="category-bar">
+                        <div class="bar-fill" data-width="88" style="--accent: #7c3aed;"></div>
+                    </div>
+                </div>
+                <!-- Azure -->
+                <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-icon" style="--accent: #0ea5e9;">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3 class="category-title">Microsoft Azure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AZ-900</span>
+                        <span class="skill-tag">AZ-104</span>
+                        <span class="skill-tag">AZ-700</span>
+                        <span class="skill-tag">AZ-500</span>
+                        <span class="skill-tag">AZ-800</span>
+                        <span class="skill-tag">Azure AD / Entra ID</span>
+                        <span class="skill-tag">RBAC</span>
+                        <span class="skill-tag">Azure Policy</span>
+                        <span class="skill-tag">VMs</span>
+                        <span class="skill-tag">VNets</span>
+                        <span class="skill-tag">Azure Firewall</span>
+                        <span class="skill-tag">Load Balancer</span>
+                        <span class="skill-tag">Blob/Files Storage</span>
+                        <span class="skill-tag">AKS</span>
+                        <span class="skill-tag">Azure Monitor</span>
+                        <span class="skill-tag">Microsoft Sentinel</span>
+                        <span class="skill-tag">PIM</span>
+                        <span class="skill-tag">Azure Arc</span>
+                        <span class="skill-tag">ARM Templates</span>
+                    </div>
+                    <div class="category-bar">
+                        <div class="bar-fill" data-width="85" style="--accent: #0ea5e9;"></div>
+                    </div>
+                </div>
+                <!-- IoT & Embedded -->
+                <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-icon" style="--accent: #10b981;">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="category-title">IoT & Embedded Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">ESP32</span>
+                        <span class="skill-tag">ESP32-CAM</span>
+                        <span class="skill-tag">ESP8266</span>
+                        <span class="skill-tag">C++ Programming</span>
+                        <span class="skill-tag">Prototyping</span>
+                        <span class="skill-tag">Sensor Integration</span>
+                        <span class="skill-tag">Deployment</span>
+                    </div>
+                    <div class="category-bar">
+                        <div class="bar-fill" data-width="78" style="--accent: #10b981;"></div>
+                    </div>
+                </div>
+                <!-- Surveillance -->
+                <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-icon" style="--accent: #f59e0b;">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="category-title">Surveillance Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">CCTV Installation</span>
+                        <span class="skill-tag">IP Cameras</span>
+                        <span class="skill-tag">Analog Cameras</span>
+                        <span class="skill-tag">DVR/NVR Setup</span>
+                        <span class="skill-tag">Remote Viewing</span>
+                        <span class="skill-tag">Cable Management</span>
+                    </div>
+                    <div class="category-bar">
+                        <div class="bar-fill" data-width="82" style="--accent: #f59e0b;"></div>
+                    </div>
+                </div>
+                <!-- Tools & Soft Skills -->
+                <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="category-icon" style="--accent: #ec4899;">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="category-title">Tools & Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Cisco Packet Tracer</span>
+                        <span class="skill-tag">VMware</span>
+                        <span class="skill-tag">Azure Portal</span>
+                        <span class="skill-tag">Adobe Photoshop</span>
+                        <span class="skill-tag">Problem-Solving</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Business English</span>
+                    </div>
+                    <div class="category-bar">
+                        <div class="bar-fill" data-width="85" style="--accent: #ec4899;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Career</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- NTI Training -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i> 2025 – 2026 &bull; 288 Hours
+                        </div>
+                        <h3 class="timeline-title">Advanced IT Infrastructure & Cloud Administration</h3>
+                        <p class="timeline-company"><i class="fas fa-building"></i> National Telecommunications Institute (NTI)</p>
+                        <ul class="timeline-details">
+                            <li>Windows Server 2016/2025 Administrator</li>
+                            <li>20740C Installation, Storage and Compute with Windows Server</li>
+                            <li>20741B Networking with Windows Server</li>
+                            <li>20742B Identity with Windows Server</li>
+                            <li>AZ-900 Introduction to Cloud Infrastructure</li>
+                            <li>AZ-104 Microsoft Azure Administrator</li>
+                            <li>AZ-700 Design & Implement Azure Network Solutions</li>
+                            <li>AZ-500 Secure Cloud Resources with Microsoft Security</li>
+                            <li>AZ-800 Administer Windows Server Hybrid Core</li>
+                            <li>Career Development Program</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Azure</span>
+                            <span class="tag">Windows Server</span>
+                            <span class="tag">NTI</span>
+                            <span class="tag">Cloud</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wataniya Roads -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker marker-purple">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i> Jan 2025 – Jun 2025
+                        </div>
+                        <h3 class="timeline-title">IT Help Desk Technician</h3>
+                        <p class="timeline-company"><i class="fas fa-building"></i> Wataniya Roads Company — Nasr City, Cairo</p>
+                        <ul class="timeline-details">
+                            <li>Provided Tier-1 technical support to 40+ end users, resolving hardware, software, and network issues with an average resolution time under 2 hours</li>
+                            <li>Deployed and configured Windows OS and business applications across 30+ workstations, reducing setup time by standardizing installation procedures</li>
+                            <li>Diagnosed and resolved LAN/internet connectivity issues for 40+ employees, maintaining 99% uptime through scheduled preventive maintenance</li>
+                            <li>Built and maintained a knowledge base of 50+ documented IT issues, reducing repeat ticket handling time by ~30%</li>
+                            <li>Installed and configured a CCTV surveillance network of 20+ IP and analog cameras with DVR/NVR setup, improving site security coverage by 100%</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Help Desk</span>
+                            <span class="tag">Windows</span>
+                            <span class="tag">Networking</span>
+                            <span class="tag">CCTV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-diagram-project"></i> Portfolio</span>
+                <h2 class="section-title">Projects & Labs</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card" data-aos="fade-up">
+                    <div class="project-icon" style="--project-color: #0ea5e9;">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="project-period">2025 – 2026</div>
+                    <h3 class="project-title">Azure Hybrid Infrastructure Lab</h3>
+                    <p class="project-track">AZ-104 / AZ-800</p>
+                    <ul class="project-details">
+                        <li>Provisioned Azure VMs, VNets, NSGs, Storage, and AKS using Azure Portal and ARM templates</li>
+                        <li>Configured Azure AD, RBAC, Azure Policy, hybrid identity, Azure Arc, and Azure Monitor</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Azure VMs</span>
+                        <span class="tag">VNets</span>
+                        <span class="tag">AKS</span>
+                        <span class="tag">Azure Arc</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon" style="--project-color: #ef4444;">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="project-period">2025 – 2026</div>
+                    <h3 class="project-title">Azure Network & Security Architecture Lab</h3>
+                    <p class="project-track">AZ-700 / AZ-500</p>
+                    <ul class="project-details">
+                        <li>Designed Azure VNets, VPN Gateway, Firewall, Application Gateway, and Load Balancer</li>
+                        <li>Implemented PIM, Identity Protection, Defender for Cloud, Sentinel, and Key Vault security</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Azure Firewall</span>
+                        <span class="tag">Sentinel</span>
+                        <span class="tag">PIM</span>
+                        <span class="tag">VPN Gateway</span>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-icon" style="--project-color: #7c3aed;">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="project-period">2024 – 2025</div>
+                    <h3 class="project-title">Windows Server 2016/2025 Enterprise Lab</h3>
+                    <p class="project-track">Hyper-V & AD DS</p>
+                    <ul class="project-details">
+                        <li>Built enterprise lab using Hyper-V; deployed AD DS, DNS, DHCP, GPO, Failover Clustering, NLB, and Storage Spaces</li>
+                        <li>Managed users, groups, OUs, and secured AD DS with monitoring and recovery procedures</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Hyper-V</span>
+                        <span class="tag">AD DS</span>
+                        <span class="tag">Clustering</span>
+                        <span class="tag">GPO</span>
+                    </div>
+                </div>
+                <!-- Project 4 - Graduation -->
+                <div class="project-card glass-card project-featured" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-badge">Graduation Project</div>
+                    <div class="project-icon" style="--project-color: #10b981;">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <div class="project-period">2023 – 2024</div>
+                    <h3 class="project-title">Smart Road Monitoring System</h3>
+                    <p class="project-track">IoT & Embedded Systems</p>
+                    <ul class="project-details">
+                        <li>Built IoT system using ESP32-CAM for real-time road image capture and transmission to a Flask server</li>
+                        <li>Applied embedded systems and IoT principles for remote monitoring, enhancing road safety and traffic management</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">ESP32-CAM</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">IoT</span>
+                        <span class="tag">Real-time</span>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-icon" style="--project-color: #f59e0b;">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="project-period">2022 – 2023</div>
+                    <h3 class="project-title">Cisco Networking Labs</h3>
+                    <p class="project-track">Routing, Switching & Security</p>
+                    <ul class="project-details">
+                        <li>Configured OSPF, EIGRP, RIP, VLANs, ACLs, port security, and advanced network diagnostics in Cisco Packet Tracer</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">OSPF</span>
+                        <span class="tag">EIGRP</span>
+                        <span class="tag">VLANs</span>
+                        <span class="tag">ACLs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Education</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-grid">
+                <div class="education-card glass-card" data-aos="zoom-in">
+                    <div class="edu-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="edu-degree">Bachelor of Computers and Information</h3>
+                    <p class="edu-field">Information Technology — IT</p>
+                    <p class="edu-institution"><i class="fas fa-map-marker-alt"></i> Zagazig University</p>
+                    <div class="edu-meta">
+                        <span class="edu-meta-item"><i class="fas fa-calendar"></i> Graduated: 2024</span>
+                        <span class="edu-meta-item"><i class="fas fa-star"></i> Grade: Very Good</span>
+                    </div>
+                    <div class="edu-highlights">
+                        <span><i class="fas fa-check-circle"></i> Networking & Infrastructure</span>
+                        <span><i class="fas fa-check-circle"></i> System Administration</span>
+                        <span><i class="fas fa-check-circle"></i> Cloud Computing</span>
+                        <span><i class="fas fa-check-circle"></i> IoT & Embedded Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-certificate"></i> Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certs-grid">
+                <!-- NTI Azure -->
+                <div class="cert-card glass-card" data-aos="flip-left">
+                    <div class="cert-badge" style="--cert-color: #0078d4;">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3 class="cert-name">Microsoft Azure Administrator</h3>
+                    <p class="cert-issuer">National Telecommunications Institute (NTI)</p>
+                    <span class="cert-id">AZ-104 / AZ-700 / AZ-500 / AZ-800</span>
+                </div>
+                <!-- Windows Server -->
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="50">
+                    <div class="cert-badge" style="--cert-color: #7c3aed;">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="cert-name">Windows Server 2016/2025 Administrator</h3>
+                    <p class="cert-issuer">NTI / Microsoft</p>
+                    <span class="cert-id">Server Administration</span>
+                </div>
+                <!-- CCNA 1 -->
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="cert-badge" style="--cert-color: #1ba0d8;">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="cert-name">CCNAv7: Introduction to Networks</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <span class="cert-id">CCNAv7 Module 1 · Oct 2024</span>
+                    <div class="cert-actions">
+                        <a href="https://www.netacad.com/certificates?issuanceId=645c4eef-d1ad-4336-811c-0e924f4a676d" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify
+                        </a>
+                        <button class="cert-view-btn" onclick="openLightbox('certs/CCNA-_Introduction_to_Networks_certificate_ahmedalsyed452-gmail-com_645c4eef-d1ad-4336-811c-0e924f4a676d.jpg')">
+                            <i class="fas fa-image"></i> View
+                        </button>
+                    </div>
+                </div>
+                <!-- CCNA 2 -->
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="150">
+                    <div class="cert-badge" style="--cert-color: #1ba0d8;">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="cert-name">CCNAv7: Switching, Routing & Wireless</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <span class="cert-id">CCNAv7 Module 2 · Oct 2024</span>
+                    <div class="cert-actions">
+                        <a href="https://www.netacad.com/certificates?issuanceId=f0ef3fda-8d1d-48f5-afd1-be4cfd465d13" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify
+                        </a>
+                        <button class="cert-view-btn" onclick="openLightbox('certs/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_ahmedalsyed452-gmail-com_f0ef3fda-8d1d-48f5-afd1-be4cfd465d13 .jpg')">
+                            <i class="fas fa-image"></i> View
+                        </button>
+                    </div>
+                </div>
+                <!-- CCNA 3 -->
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="cert-badge" style="--cert-color: #1ba0d8;">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="cert-name">CCNAv7: Enterprise Networking, Security & Automation</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <span class="cert-id">CCNAv7 Module 3 · Oct 2024</span>
+                    <div class="cert-actions">
+                        <a href="https://www.netacad.com/certificates?issuanceId=053f46af-d41c-4ca5-897c-990e13b63fab" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify
+                        </a>
+                        <button class="cert-view-btn" onclick="openLightbox('certs/CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_ahmedalsyed452-gmail-com_053f46af-d41c-4ca5-897c-990e13b63fab.jpg')">
+                            <i class="fas fa-image"></i> View
+                        </button>
+                    </div>
+                </div>
+                <!-- DEPI -->
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="250">
+                    <div class="cert-badge" style="--cert-color: #e74c3c;">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3 class="cert-name">DEPI — Infrastructure & Security</h3>
+                    <p class="cert-issuer">Digital Egypt Pioneers Program</p>
+                    <span class="cert-id">Cisco Network Administrator · Apr–Oct 2024</span>
+                    <div class="cert-actions">
+                        <button class="cert-view-btn" onclick="openLightbox('certs/DEPI — Infrastructure & Security.jpg')">
+                            <i class="fas fa-image"></i> View
+                        </button>
+                    </div>
+                </div>
+                <!-- Business English -->
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="cert-badge" style="--cert-color: #f59e0b;">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="cert-name">Business English Track</h3>
+                    <p class="cert-issuer">Digital Egyptian Pioneers (OTO Courses)</p>
+                    <span class="cert-id">Round 1 · Apr–Oct 2024</span>
+                    <div class="cert-actions">
+                        <button class="cert-view-btn" onclick="openLightbox('certs/Business English Track.jpg')">
+                            <i class="fas fa-image"></i> View
+                        </button>
+                    </div>
+                </div>
+                <!-- IoT -->
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="350">
+                    <div class="cert-badge" style="--cert-color: #10b981;">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="cert-name">Introduction to IoT & Embedded Systems</h3>
+                    <p class="cert-issuer">Coursera — University of California, Irvine</p>
+                    <span class="cert-id">Sep 2023</span>
+                    <div class="cert-actions">
+                        <a href="https://www.coursera.org/account/accomplishments/records/2DC36KXNWHBJ" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify
+                        </a>
+                        <button class="cert-view-btn" onclick="openLightbox('certs/1-Introduction to the Internet of Things.jpg')">
+                            <i class="fas fa-image"></i> View
+                        </button>
+                    </div>
+                </div>
+                <!-- Arduino C -->
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="cert-badge" style="--cert-color: #10b981;">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="cert-name">The Arduino Platform & C Programming</h3>
+                    <p class="cert-issuer">Coursera — University of California, Irvine</p>
+                    <span class="cert-id">Oct 2023</span>
+                    <div class="cert-actions">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/DWQA8VRHC8WP" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify
+                        </a>
+                        <button class="cert-view-btn" onclick="openLightbox('certs/2-The Arduino Platform and C Programming.jpg')">
+                            <i class="fas fa-image"></i> View
+                        </button>
+                    </div>
+                </div>
+                <!-- Arduino Interfacing -->
+                <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="450">
+                    <div class="cert-badge" style="--cert-color: #10b981;">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="cert-name">Interfacing with the Arduino</h3>
+                    <p class="cert-issuer">Coursera — University of California, Irvine</p>
+                    <span class="cert-id">Feb 2024</span>
+                    <div class="cert-actions">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/W94BZXNM58N9" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify
+                        </a>
+                        <button class="cert-view-btn" onclick="openLightbox('certs/3-Interfacing with the Arduino.jpg')">
+                            <i class="fas fa-image"></i> View
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Certificate Lightbox Modal -->
+    <div class="lightbox-overlay" id="cert-lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Certificate" id="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Connect</span>
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="section-line"></div>
+                <p class="section-description">
+                    Interested in working together? Let's connect and discuss how I can
+                    contribute to your team or project.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card glass-card" data-aos="fade-right">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:ahmedalsyed452@gmail.com" class="contact-link">ahmedalsyed452@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card" data-aos="fade-right" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+201029361576" class="contact-link">+20 102 936 1576</a>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nasr City, Cairo, Egypt</p>
+                        </div>
+                    </div>
+                    <div class="social-links" data-aos="fade-up">
+                        <a href="https://linkedin.com/in/ahmed-alsayed-fakhaa452" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:ahmedalsyed452@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://ahmed-elsayed-cv-web.vercel.app" target="_blank" class="social-link" aria-label="Portfolio"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card" id="contact-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <input type="text" id="form-name" placeholder=" " required>
+                        <label for="form-name">Your Name</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" placeholder=" " required>
+                        <label for="form-email">Your Email</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="form-subject" placeholder=" " required>
+                        <label for="form-subject">Subject</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="form-message" rows="5" placeholder=" " required></textarea>
+                        <label for="form-message">Message</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Ahmed El_Sayed<span class="logo-bracket"> /&gt;</span>
+                </a>
+                <p class="footer-text">Building secure, scalable, and innovative technology solutions.</p>
+                <div class="footer-divider"></div>
+                <p class="footer-copyright">&copy; 2026 Ahmed El_Sayed Salah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
